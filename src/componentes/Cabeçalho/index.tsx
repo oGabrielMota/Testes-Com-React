@@ -1,3 +1,4 @@
+import React from "react";
 import "./estilo.css";
 
 const Cabecalho = () => {

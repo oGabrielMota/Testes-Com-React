@@ -1,6 +1,7 @@
 import { render } from "@testing-library/react";
+import React from "react";
 import { RecoilRoot } from "recoil";
-import { Configuracao } from "./Configuracao";
+import Configuracao from "./Configuracao";
 
 const mockNavegacao = jest.fn();
 
@@ -10,8 +11,8 @@ jest.mock("react-router-dom", () => {
   };
 });
 
-describe("A pagina de Configuração", () => {
-  test("Dever ser renderizada corretamente", () => {
+describe("a pagina de configuracao", () => {
+  test("deve ser renderizada corretamente", () => {
     const { container } = render(
       <RecoilRoot>
         <Configuracao />
