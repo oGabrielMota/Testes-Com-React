@@ -2,26 +2,42 @@
 
 exports[`A pagina de Configuração Dever ser renderizada corretamente 1`] = `
 <div>
-  <form>
-    <input
-      placeholder="Insira os nomes dos participantes"
-      type="text"
-      value=""
-    />
-    <button
-      disabled=""
+  <section>
+    <h2>
+      Vamos começar!
+    </h2>
+    <form>
+      <div
+        class="grupo-input-btn"
+      >
+        <input
+          placeholder="Insira os nomes dos participantes"
+          type="text"
+          value=""
+        />
+        <button
+          disabled=""
+        >
+          Adicionar
+        </button>
+        
+      </div>
+    </form>
+    <ul />
+    <footer
+      class="rodape-configuracoes"
     >
-      Adicionar
-    </button>
-    
-  </form>
-  <ul />
-  <footer>
-    <button
-      disabled=""
-    >
-      Inciar brincadeira
-    </button>
-  </footer>
+      <button
+        class="botao"
+        disabled=""
+      >
+        Inciar brincadeira
+      </button>
+      <img
+        alt="Sacolas de compras"
+        src="/imagens/sacolas.png"
+      />
+    </footer>
+  </section>
 </div>
 `;
