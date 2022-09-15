@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { useListaParticipantes } from "../state/hook/useListaParticipantes";
+import { useSorteador } from "../state/hook/useSorteador";
 import "./Rodape.css";
 
 export const Rodape = () => {
@@ -7,8 +8,11 @@ export const Rodape = () => {
 
   const navegarPara = useNavigate();
 
+  const sortear = useSorteador();
+
   const iniciar = () => {
-    navegarPara("/sorteiro");
+    sortear();
+    navegarPara("/sorteio");
   };
   return (
     <footer className="rodape-configuracoes">
